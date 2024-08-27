@@ -3,29 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro to JavaScript Assignment</title>
+    <title>This Week's Assignments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <label for= "languageInput">
-        What language was created to add interactivity to the Web? :
-    </label>
-    <input type="text" id="languageInput">
-    <button onclick="showInputValue()">Show Value</button>
+    <h1>This Week's Assignments</h1>
+    <ul>
+        <li><a href="assignment1.html" target="_blank">Assignment 1: Intro to JavaScript Assignment</a></li>
+        <li><a href="assignment2.html" target="_blank">Assignment 2: Variables/Processing/ Input JavaScript - Assignment</a></li>
+        
+    </ul>
 </body>
 </html>
 
-<script>
-    // Function to get and display the value entered in the input field
-    function showInputValue() {
-        let languageInput = document.querySelector("#languageInput");
-        alert("You entered: " + languageInput.value);
-    }
-    // Getting input from the user and checking the value with if statements
-    let prefLibrary = prompt("What code library would you prefer? (Vue, React or jQuery)");
-    if (prefLibrary == "Vue" || prefLibrary == "React" || prefLibrary == "jQuery") {
-        alert("You chose " + prefLibrary)
-    }
-    else {
-        alert("Invalid library selection. Please try again.");
-    }
-</script>
